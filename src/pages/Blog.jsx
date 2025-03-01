@@ -9,7 +9,7 @@ const Blog = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios.get("https://portfolio-blog-backend.onrender.com/api/blogs", { timeout: 60000 })
+    axios.get("https://portfolio-blog-backend-xour.onrender.com/api/blogs", { timeout: 60000 })
       .then(response => {
         console.log("Blog Data:", response.data);
         setBlogs(response.data);

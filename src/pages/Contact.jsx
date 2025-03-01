@@ -22,7 +22,7 @@ const Contact = () => {
     setStatus({ submitted: false, error: false, loading: true });
 
     try {
-      await axios.post("https://portfolio-blog-backend.onrender.com/api/contact", formData);
+      await axios.post("https://portfolio-blog-backend-xour.onrender.com/api/contact", formData);
       setStatus({ submitted: true, error: false, loading: false });
       setFormData({ name: "", email: "", message: "" }); // Clear form after submission
     } catch (error) {

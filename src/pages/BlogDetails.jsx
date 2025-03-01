@@ -9,7 +9,7 @@ const BlogDetails = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get(`https://portfolio-blog-backend.onrender.com/api/blogs/${id}`)
+    axios.get(`https://portfolio-blog-backend-xour.onrender.com/api/blogs/${id}`)
       .then(response => {
         setBlog(response.data);
         setLoading(false);
