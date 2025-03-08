@@ -9,7 +9,7 @@ const EditBlog = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/api/blogs/${id}`)
+    axios.get(`https://portfolio-blog-backend-xour.onrender.com/api/blogs/${id}`)
       .then(response => setFormData(response.data))
       .catch(error => console.error("Error fetching blog:", error));
   }, [id]);
@@ -20,7 +20,7 @@ const EditBlog = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.put(`http://localhost:5000/api/blogs/${id}`, formData);
+    await axios.put(`https://portfolio-blog-backend-xour.onrender.com/api/blogs/${id}`, formData);
     navigate("/admin");
   };
 

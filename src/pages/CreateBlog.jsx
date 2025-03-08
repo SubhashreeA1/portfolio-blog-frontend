@@ -13,7 +13,7 @@ const CreateBlog = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://localhost:5000/api/blogs", formData);
+    await axios.post("https://portfolio-blog-backend-xour.onrender.com/api/blogs", formData);
     navigate("/admin");
   };
 
